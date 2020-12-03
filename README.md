@@ -1,16 +1,27 @@
-### Hi there 👋
+### Snooth Scrolling Library (Vanilla JS)
 
-<!--
-**navetacandra24/navetacandra24** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+####[CDN Link](https://navetacandra24.github.io/javascript/smoothscroll.js)
+```Javascript
+// Get Triggers Element
+let scrollToggle = document.querySelectorAll(<triggers-links>);
 
-Here are some ideas to get you started:
+// For each smooth scroll link
+scrollToggle.forEach(function (toggle) {
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    // When the smooth scroll link is clicked
+    toggle.addEventListener('click', function (e) {
+        // Prevent the default link behavior
+        e.preventDefault();
+        
+        // Get anchor link and calculate distance from the top
+        let dataID = toggle.getAttribute('href');
+        let dataTarget = document.querySelector(dataID);
+        
+        // If the anchor exists
+        if (dataTarget) {
+            // Scroll to the anchor
+            smoothScroll(dataTarget, <duration>);
+        }
+    }, false);
+});
+```
