@@ -1,4 +1,4 @@
-## Snooth Scrolling Library (Vanilla JS)
+## Smooth Scrolling Library (Vanilla JS)
 
 ###[CDN Link](https://navetacandra24.github.io/javascript/smoothscroll.js)
 ```Javascript
