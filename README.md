@@ -1,6 +1,6 @@
-### Snooth Scrolling Library (Vanilla JS)
+## Snooth Scrolling Library (Vanilla JS)
 
-####[CDN Link](https://navetacandra24.github.io/javascript/smoothscroll.js)
+###[CDN Link](https://navetacandra24.github.io/javascript/smoothscroll.js)
 ```Javascript
 // Get Triggers Element
 let scrollToggle = document.querySelectorAll(<triggers-links>);
