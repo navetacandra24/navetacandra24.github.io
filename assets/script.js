@@ -101,20 +101,22 @@ function smoothScroll(anchor, duration) {
     let runAnimation = setInterval(animateScroll, 16);
 }
 
-// For each smooth scroll link
-[].forEach.call(scrollToggle, function (toggle) {
-    // When the smooth scroll link is clicked
-    toggle.addEventListener('click', function (e) {
-        // Prevent the default link behavior
-        e.preventDefault();
-        // Get anchor link and calculate distance from the top
-        let dataID = toggle.getAttribute('href');
-        let dataTarget = document.querySelector(dataID);
-        // If the anchor exists
-        if (dataTarget) {
-            // Scroll to the anchor
-            smoothScroll(dataTarget, 1200);
-        }
-    }, false);
-});
-
+if("querySelector" in document && "addEventListener" in window && Array.prototype.forEach)
+    {
+    // For each smooth scroll link
+    [].forEach.call(scrollToggle, function (toggle) {
+        // When the smooth scroll link is clicked
+        toggle.addEventListener('click', function (e) {
+            // Prevent the default link behavior
+            e.preventDefault();
+            // Get anchor link and calculate distance from the top
+            let dataID = toggle.getAttribute('href');
+            let dataTarget = document.querySelector(dataID);
+            // If the anchor exists
+            if (dataTarget) {
+                // Scroll to the anchor
+                smoothScroll(dataTarget, 1200);
+            }
+        }, false);
+    });
+    }
