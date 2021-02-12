@@ -13,7 +13,6 @@ B: Ya bro Dijamin Barang Nya Fresh
 A: Ragu Deh
 B: Ragu Skip Ya Bro
 
-Buy? Pm
+Buy? [Pm](https://wa.me/6285738165947)
 Cpp hasil buatan sendiri.
-https://wa.me/6285738165947
 ```
